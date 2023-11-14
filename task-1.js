@@ -1,6 +1,6 @@
 function isEnoughCapacity(products, containerSize){
     let totalCount = 0;
-    for (product in products){
+    for (const product in products){
         totalCount += products[product];
         }
     return containerSize > totalCount;
